@@ -3,8 +3,8 @@
 :root{
     --primary-color: #22254b;
     --secondary-color: #373b69;
-
 }
+
 *{
     box-sizing: border-box;
 }
@@ -23,7 +23,7 @@ header {
 
 }
 
-.search{
+.search {
     background-color: transparent;
     border: 2px solid var(--primary-color);
     border-radius: 50px;
@@ -63,7 +63,7 @@ main{
     width: 100%;
 }
 
-.movie-info{
+.movie-info {
     color: #eee;
     display: flex;
     align-items: center;
@@ -72,30 +72,30 @@ main{
     letter-spacing: 0.5px; 
 }
 
-.movie-info h3{
+.movie-info h3 {
     margin-top: 0;
 }
 
-.movie-info span{
+.movie-info span {
     background-color: var(--primary-color);
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
     font-weight: bold;
 }
 
-.movie-info span.green{
+.movie-info span.green {
     color: lightgreen;
 }
 
-.movie-info span.orange{
+.movie-info span.orange {
     color: orange;
 }
 
-.movie-info span.red{
+.movie-info span.red {
     color: red;
 }
 
-.overview{
+.overview {
     background-color: #fff;
     padding: 2rem;
     position: absolute;
@@ -104,7 +104,10 @@ main{
     right: 0;
     max-height: 100%;
     transform: translateY(101%);
-    
-
+    transition: 0.3s ease-in;
 }
 
+.movie:hover .overview {
+    transform: translateY(0);
+
+}
